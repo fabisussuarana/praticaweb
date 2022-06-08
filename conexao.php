@@ -5,7 +5,7 @@ $bdname = "cadastro";
 $usuario = "root";
 $senha = "";
 $porta = 3306;
-
+ 
 $conexao = msqli_connect($servidor, $usuario, $senha, $bdname);
 
 if(!conexao)
