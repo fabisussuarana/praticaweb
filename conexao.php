@@ -6,7 +6,7 @@ $usuario = "root";
 $senha = "";
 $porta = 3306;
  
-$conexao = msqli_connect($servidor, $usuario, $senha, $bdname);
+$conexao = mysqli_connect($servidor, $usuario, $senha, $bdname);
 
 if(!conexao)
     die("Problemas com a conexão com o banco de dados. Descriçãop do problema: " . mysqli_connect_error());
