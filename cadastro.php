@@ -7,5 +7,11 @@
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql = 
+    $sql = "INSERT INTO usuarios VALUES ('$nome', '$data', '$email', '$senha')";
+
+    if(mysqli_query($conexao, $sql)){
+        echo 'Conexão realizada!';
+    }
+    else
+        die 'Erro: ' . mysqli_connect_error();
 ?>
