@@ -10,7 +10,7 @@
     $sql = "INSERT INTO usuarios VALUES ('$nome', '$data', '$email', '$senha')";
 
     if(mysqli_query($conexao, $sql)){
-        echo 'Conexão realizada!';
+        echo '<br>Dados inseridos!';
     }
     else
         echo 'Erro: ' . mysqli_connect_error();
