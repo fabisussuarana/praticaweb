@@ -13,5 +13,5 @@
         echo 'Conexão realizada!';
     }
     else
-        die 'Erro: ' . mysqli_connect_error();
+        echo 'Erro: ' . mysqli_connect_error();
 ?>
