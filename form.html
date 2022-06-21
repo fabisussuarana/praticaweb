@@ -18,7 +18,7 @@
             <form action="cadastro.php" method="post">
                 <div class="div">
                     <label for="nome"><strong>Nome:</strong></label>
-                    <input type="text" name="nome" id="nome" size="20" placeholder="Digite seu nome" required>
+                    <input type="text" name="nome" id="nome" size="20" placeholder="Digite seu nome">
                 </div><br>
 
                 <div class="div">
@@ -37,7 +37,7 @@
                 </div><br>
 
                 <div>
-                    <input type="submit" id="b" value="Enviar" name="enviar" ></input>
+                    <input type="submit" id="b" value="Enviar" name="enviar" onclick="validacao()"></input>
                 </div>
 
             </form>
@@ -46,12 +46,13 @@
 
     </div>
     <script type="text/javascript">
-        console.log(document.getElementById("nome").value.length)
-
-        
-        /*if(document.getElementById("name").value.length == 0){
-
-        }*/        
+        function validacao(
+            if (document.getElementById("nome").value.length == 0){
+                alert("Por favor preencha o campo!")
+            }else{
+                document.getElementById("b").submit()
+            }    
+        )    
     </script>
 </body>
 
