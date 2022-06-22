@@ -33,7 +33,7 @@
 
                 <div class="div">
                     <label for="senha"><strong>Senha:</strong></label>
-                    <input type="password" name="senha" placeholder="Digite sua senha">
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
                 </div><br>
 
                 <div>
@@ -47,7 +47,8 @@
     </div>
     <script type="text/javascript">
         function validacao(){
-            if ((document.getElementById("nome").value.length == 0) || (document.getElementById("data").value.length == 0)){
+            if ((document.getElementById("nome").value.length == 0) || (document.getElementById("data").value.length == 0) ||
+            (document.getElementById("email").value.length == 0) || (document.getElementById("senha").value.length == 0)){
                 alert("Por favor preencha TODOS os campos!")
                 return false
             }else{
