@@ -28,7 +28,7 @@
 
                 <div class="div">
                     <label for="email"><strong>E-mail:</strong></label>
-                    <input type="text" name="email" class="campo" size="19" placeholder="Digite seu e-mail" required>
+                    <input type="text" name="email" class="campo" size="19" placeholder="Digite seu e-mail">
                 </div><br>
 
                 <div class="div">
@@ -60,7 +60,7 @@
         function validacao(){
             var dados = document.getElementsByClassName('campo')
             var tamanho = dados.length // Pegando o tamanho do vetor dados
-            var alguemVazio = false // Inicia
+            var alguemVazio = false // Inicializando como se todos os campos estivessem preenchidos
 
             for(var i = 0;i < tamanho;i++){
                 if((dados[i].value == '')){
