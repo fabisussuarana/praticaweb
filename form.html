@@ -15,7 +15,7 @@
 
         <div class="grupo">
 
-            <form action="cadastro.php" method="post">
+            <form action="cadastro.php" method="post" onsubmit="return validacao()">
                 <div class="div">
                     <label for="nome"><strong>Nome:</strong></label>
                     <input type="text" name="nome" class="campo" size="20" placeholder="Digite seu nome">
@@ -37,7 +37,7 @@
                 </div><br>
 
                 <div>
-                    <input type="submit" id="b" value="Enviar" name="enviar" onclick="return validacao()"></input>
+                    <input type="submit" id="b" value="Enviar" name="enviar"></input>
                 </div>
 
             </form>
@@ -59,8 +59,8 @@
 
         function validacao(){
             var dados = document.getElementsByClassName('campo')
-            var tamanho = dados.length
-            var alguemVazio = false
+            var tamanho = dados.length // Pegando o tamanho do vetor dados
+            var alguemVazio = false // Inicia
 
             for(var i = 0;i < tamanho;i++){
                 if((dados[i].value == '')){
