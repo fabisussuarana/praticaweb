@@ -18,22 +18,22 @@
             <form action="cadastro.php" method="post">
                 <div class="div">
                     <label for="nome"><strong>Nome:</strong></label>
-                    <input type="text" name="nome" id="nome" size="20" placeholder="Digite seu nome">
+                    <input type="text" name="nome" class="campo" size="20" placeholder="Digite seu nome">
                 </div><br>
 
                 <div class="div">
                     <label for="data"><strong>Nascimento:</strong></label>
-                    <input type="date" name="data" id="data" placeholder="Data de nascimento">
+                    <input type="date" name="data" class="campo" placeholder="Data de nascimento">
                 </div><br>
 
                 <div class="div">
                     <label for="email"><strong>E-mail:</strong></label>
-                    <input type="text" name="email" id="email" size="19" placeholder="Digite seu e-mail" required>
+                    <input type="text" name="email" class="campo" size="19" placeholder="Digite seu e-mail" required>
                 </div><br>
 
                 <div class="div">
                     <label for="senha"><strong>Senha:</strong></label>
-                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                    <input type="password" name="senha" class="campo" placeholder="Digite sua senha">
                 </div><br>
 
                 <div>
@@ -46,7 +46,7 @@
 
     </div>
     <script type="text/javascript">
-        function validacao(){
+        /*function validacao(){
             if ((document.getElementById("nome").value.length == 0) || (document.getElementById("data").value.length == 0) ||
             (document.getElementById("email").value.length == 0) || (document.getElementById("senha").value.length == 0)){
                 alert("Por favor preencha TODOS os campos!")
@@ -55,6 +55,23 @@
                 document.getElementById("b").submit()
                 return true
             }    
+        } */ 
+
+        function validacao(){
+            var dados = document.getElementsByClassName('campo')
+            var tamanho = dados.length
+            var alguemVazio = false
+
+            for(var i = 0;i < tamanho;i++){
+                if((dados[i].value == '')){
+                    alguemVazio = true
+                    break
+                } 
+            }
+            if(alguemVazio){
+                alert('Por favor preencha todos os campos!')
+                return false
+            } else return true 
         }
            
     </script>
