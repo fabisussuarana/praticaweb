@@ -14,8 +14,7 @@ body{
 }
 #logo{
     height: 135px;
-    width: 135px;
-    position: absolute;
+    width: 135px; 
 }
 #divlogo{
     background-color: rgba(0, 2, 78, 70%);
@@ -107,7 +106,7 @@ p{
 @media (min-width: 480px){
     #fundo{
         height: 45vh;
-        width: auto;
+        width: 75vh;
         display: flex;
         justify-content: center; /* Centralizar o conteúdo na linha, ou seja, horizontalmente */
         align-items: center; /* Centralizar o conteúdo verticalmente */
@@ -125,8 +124,7 @@ p{
     }
 }
 
-
 /* DESKTOP */
 @media (min-width: 700px){
-    
+
 }
