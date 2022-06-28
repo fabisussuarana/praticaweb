@@ -21,7 +21,7 @@ body{
     height: 135px;
     width: 135px;
     position: absolute;
-    margin-top: -18.1em;
+    margin-top: 55px;
     margin-left: 50mm;
     border-radius: 100px;
 }
@@ -50,9 +50,8 @@ h2{
 p{
     color: white;
     font-family: sans-serif;
-    font-size: 30px;
-    margin-top: 3px;
-    margin: 30px;
+    font-size: 27px;
+    padding: 45px;
     text-align: justify;
 }
 #botao{
@@ -65,15 +64,15 @@ p{
     margin-left: 32%;
     margin-top: 4%;
     border: none;
-    box-shadow: 0px 0px 16px 2px rgba(255, 255, 0, 0.5);
+    box-shadow: 0px 0px 16px 2px rgba(255, 255, 0, 0.5); 
     border-radius: 50px;
 }
 #facebook{
-    margin-left: 2.5em;
+    margin-left: 10px;
     font-size: 55px;
     position: absolute;
     color: white;
-    margin-top: -15%;
+    margin-top: 55%;
 }
 #twitter{
     margin-left: 3.8em;
@@ -105,7 +104,7 @@ p{
 /* TABLET */
 @media (min-width: 480px){
     #fundo{
-        height: 45vh;
+        height: 43vh;
         width: 75vh;
         display: flex;
         justify-content: center; /* Centralizar o conteúdo na linha, ou seja, horizontalmente */
@@ -113,14 +112,35 @@ p{
         background: url('/pczin.jpg') no-repeat center;  
     }
     #cont{
-        width: auto;
-        height: 100%;
+        min-width: 73vh;
+        min-height: 100%;
         background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 2, 54));
         margin-top: -8.3em;
         margin-left: -5px;
         position: absolute;  
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
+    }
+    #logo{
+        height: 150px;
+        width: 150px; 
+    }
+    #divlogo{
+        background-color: rgba(0, 2, 78, 70%);
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 20px;
+        border-radius: 100px;
+    }
+    #video{
+        width: 500px;
+        margin-left: 105px; 
+    }
+    p{
+        padding: 50px;
+        font-size: 37px;
     }
 }
 
