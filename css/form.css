@@ -12,7 +12,7 @@
         background-color: rgba(255, 255, 255, 0.2);
         box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
         display: flex;
-        margin-left: 48px;
+        margin-left: 56px;
         margin-top: 140px;
         width: 70%;
         min-height: 50%;
@@ -54,7 +54,7 @@
 
 @media (max-width: 374px){
     .cont{
-        margin-left: 25px;
+        margin-left: 40px;
     }
 
     .grupo{
