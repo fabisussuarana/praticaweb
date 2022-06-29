@@ -22,7 +22,7 @@ body{
     width: 135px;
     position: absolute;
     margin-top: 55px;
-    margin-left: 50mm;
+    margin-left: 55mm;
     border-radius: 100px;
 }
 h2{
@@ -42,7 +42,7 @@ h2{
     height: 100%;
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 2, 54));
     margin-top: -8.3em;
-    margin-left: -5px;
+    margin-left: -2px;
     position: absolute;  
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -103,17 +103,22 @@ p{
 
 /* TABLET */
 @media (min-width: 480px){
+    body{
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 72, 85)) center fixed;
+    }
     #fundo{
         height: 43vh;
-        width: 81vh;
+        width: 95vh;
         display: flex;
         justify-content: center; /* Centralizar o conteúdo na linha, ou seja, horizontalmente */
         align-items: center; /* Centralizar o conteúdo verticalmente */
-        background: url('/pczin.jpg') no-repeat center;  
+        background: url('/pczin.jpg') no-repeat center center/cover;  
     }
     #cont{
-        min-width: 80vh;
+        min-width: 94vh;
         min-height: 100%;
+        margin-top: -80px;
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 72, 85));
     }
     #logo{
         height: 150px;
@@ -122,7 +127,7 @@ p{
     #divlogo{
         height: 150px;
         width: 150px;
-        margin-top: -100px;
+        margin-top: -70px;
         margin-left: 20px;
     }
     #video{
@@ -131,7 +136,7 @@ p{
     }
     p{
         padding: 50px;
-        font-size: 37px;
+        font-size: 28px;
     }
     #botao{
         font-size: 1.6em;
@@ -139,6 +144,9 @@ p{
         height: 3.7em;
         margin-left: 36%;
         margin-top: 4%;
+        background: rgb(17, 217, 224);
+        box-shadow: 0px 0px 16px 2px rgba(17, 208, 241, 0.5);
+        
     }
     #facebook{
         margin-left: 3.3em;
@@ -149,11 +157,11 @@ p{
         font-size: 65px;
     }
     #instagram{
-        margin-left: 5.9em;
+        margin-left: 5.8em;
         font-size: 65px;
     }
     #whatsapp{
-        margin-left: 7.1em;
+        margin-left: 7em;
         font-size: 65px;
     }
 }
@@ -173,43 +181,44 @@ p{
         min-height: 70%;
     }
     h2{
-        font-size: 2.8em;
+        font-size: 3.8em;
         text-align: center;
-        margin-top: 38px;
+        margin-top: 50px;
+        padding: 10px;
     }
     #video{
         width: 700px;
-        margin-left: 25%; 
+        margin-left: 55vh; 
     }
     p{
         padding: 90px;
         font-size: 30px;
     }
     #botao{
-        margin-left: 39%;
-        margin-top: 4%;
+        margin-left: 40%;
+        margin-top: auto;
     }
     #facebook{
         margin-left: 7.6em;
         font-size: 65px;
-        margin-top: -30%;
+        margin-top: -2%;
     }
     #twitter{
         margin-left: 9em;
         font-size: 65px;
-        margin-top: -30%;
+        margin-top: -2%;
     }
     #instagram{
         margin-left: 10.3em;
         font-size: 65px;
-        margin-top: -30%;
+        margin-top: -2%;
     }
     #whatsapp{
         margin-left: 11.6em;
         font-size: 65px;
-        margin-top: -30%;
+        margin-top: -2%;
     }
     .ass{
-        margin-top: 20%;
+        margin-top: 24%;
     }
 }
