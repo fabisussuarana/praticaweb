@@ -199,26 +199,32 @@ p{
         margin-top: auto;
     }
     #facebook{
-        margin-left: 7.6em;
+        margin-left: 7.8em;
         font-size: 65px;
         margin-top: -2%;
     }
     #twitter{
-        margin-left: 9em;
+        margin-left: 9.2em;
         font-size: 65px;
         margin-top: -2%;
     }
     #instagram{
-        margin-left: 10.3em;
+        margin-left: 10.5em;
         font-size: 65px;
         margin-top: -2%;
     }
     #whatsapp{
-        margin-left: 11.6em;
+        margin-left: 11.8em;
         font-size: 65px;
         margin-top: -2%;
     }
     footer .ass{
         margin-top: 20%;
+    }
+    footer .ass p{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 200px;
+        padding: 90px 0 15px 0;
     }
 }
