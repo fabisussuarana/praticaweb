@@ -219,6 +219,11 @@ p{
         margin-top: -2%;
     }
     .ass{
-        margin-top: 24%;
+        margin-top: 20%;
+        font
+    }
+    footer .ass{
+        height: 50px;
+        font-size: 15px;
     }
 }
