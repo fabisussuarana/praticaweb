@@ -168,6 +168,9 @@ p{
 
 /* DESKTOP */
 @media (min-width: 720px){
+    body{
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 2, 54)) center fixed;
+    }
     #fundo{
         height: 60vh;
         width: 220vh;
@@ -179,7 +182,8 @@ p{
     #cont{
         min-width: 219.5vh;
         min-height: 70%;
-    }
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 2, 54));
+    } 
     h2{
         font-size: 3.8em;
         text-align: center;
