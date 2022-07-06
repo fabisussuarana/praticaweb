@@ -1,10 +1,9 @@
 <?php
 
 $servidor = "localhost";
-$bdname = "cadastro";
-$usuario = "root";
-$senha = "";
-$porta = 3306;
+$bdname = "cadastro_fabiana";
+$usuario = "elektro";
+$senha = "ipi2022";
  
 $conexao = mysqli_connect($servidor, $usuario, $senha, $bdname);
 
