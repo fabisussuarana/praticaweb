@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(2, 3, 37)) center fixed;
+}
+
+#container{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: block;
+    min-height: 480px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #eee;
+    padding: 8px;
+}
+
+div.video {
+    padding-bottom: 53%;
+    position: relative
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    width: 88%;
+    height: 80%;
+}
+
+.item{
+    padding: 15px;
+    text-align: center;
+}
+
+.item p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.item h2{
+    font-size: 27px;
+}
+
+.item #botao{
+    font-size: 1.2em;
+    font-weight: bold;
+    min-width: 7em;
+    height: 2.5em;
+    background: yellow;
+    border: none;
+    box-shadow: 0px 0px 16px 2px rgba(255, 255, 0, 0.5); 
+    border-radius: 50px;
+    top: 30%;
+    left: 35%;
+}
+
+#facebook{
+    font-size: 40px;
+    color: #eee;
+    text-decoration: none;
+    position: relative;
+    margin-left: 140px;
+}
+
+#twitter{
+    font-size: 40px;
+    color: #eee;
+    text-decoration: none;
+}
+
+#instagram{
+    font-size: 40px;
+    color: #eee;
+    text-decoration: none;
+}
+
+#whatsapp{
+    font-size: 40px;
+    color: #eee;
+}
+
+#divlogo{
+    background: rgba(0, 62, 155, 0.486);
+    width: 90px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 100%;
+}
+
+#logo{
+    width: 90px;
+}
+
+/* TABLET */
+@media (min-width: 480px){
+    body{
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 72, 85)) center fixed;
+    }
+    header{
+        border: 1px solid white;
+        height: 120px;
+    }
+    #botao{
+        font-size: 1.6em;
+        width: 9.5em;
+        height: 3.7em;
+        margin-left: 36%;
+        margin-top: 4%;
+        background: rgb(17, 217, 224);
+        box-shadow: 0px 0px 16px 2px rgba(17, 208, 241, 0.5);
+        
+    }
+    #facebook{
+        margin-left: 3.3em;
+        font-size: 65px;
+    }
+    #twitter{
+        margin-left: 4.6em;
+        font-size: 65px;
+    }
+    #instagram{
+        margin-left: 5.8em;
+        font-size: 65px;
+    }
+    #whatsapp{
+        margin-left: 7em;
+        font-size: 65px;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 720px){
+    body{
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 2, 54)) center fixed;
+    }
+    #facebook{
+        margin-left: 4em;
+        font-size: 65px;
+        margin-top: -2%;
+    }
+    #twitter{
+        margin-left: 5em;
+        font-size: 65px;
+        margin-top: -2%;
+    }
+    #instagram{
+        margin-left: 6em;
+        font-size: 65px;
+        margin-top: -2%;
+    }
+    #whatsapp{
+        margin-left: 7em;
+        font-size: 65px;
+        margin-top: -2%;
+    }
+}
