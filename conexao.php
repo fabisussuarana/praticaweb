@@ -1,10 +1,9 @@
 <?php
 
-$servidor = "localhost";
-$bdname = "cadastro";
-$usuario = "root";
-$senha = "";
-$porta = 3306;
+$servidor = "br894.hostgator.com.br";
+$bdname = "mvpstudi_cadastro_fabiana";
+$usuario = "mvpstudi_elektro";
+$senha = "ipi2022";
  
 $conexao = mysqli_connect($servidor, $usuario, $senha, $bdname);
 
